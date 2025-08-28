@@ -26,11 +26,29 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				hope: {
+					DEFAULT: 'hsl(var(--hope))',
+					foreground: 'hsl(var(--hope-foreground))',
+					hover: 'hsl(var(--hope-hover))'
+				},
+				trust: {
+					DEFAULT: 'hsl(var(--trust))',
+					foreground: 'hsl(var(--trust-foreground))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				'warm-gray': {
+					DEFAULT: 'hsl(var(--warm-gray))',
+					foreground: 'hsl(var(--warm-gray-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -67,6 +85,21 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-hope': 'var(--gradient-hope)',
+				'gradient-trust': 'var(--gradient-trust)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-warm': 'var(--gradient-warm)'
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'hope': 'var(--shadow-hope)',
+				'elegant': 'var(--shadow-elegant)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			keyframes: {
 				'accordion-down': {

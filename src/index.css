@@ -2,14 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Miale Ya Pambazuko Design System - Colors inspired by hope, empowerment, and African warmth */
 
 @layer base {
   :root {
+    /* Core brand colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+
+    /* Brand purple - empowerment & dignity */
+    --primary: 280 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 280 100% 30%;
+
+    /* Hope orange - warmth & optimism */
+    --hope: 25 95% 53%;
+    --hope-foreground: 0 0% 100%;
+    --hope-hover: 25 95% 48%;
+
+    /* Trust blue - reliability & support */
+    --trust: 220 90% 56%;
+    --trust-foreground: 0 0% 100%;
+
+    /* Success green - growth & achievement */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warm neutrals */
+    --warm-gray: 30 5% 95%;
+    --warm-gray-foreground: 30 5% 15%;
+
+    --secondary: 30 5% 95%;
+    --secondary-foreground: 280 100% 35%;
+
+    --muted: 30 5% 97%;
+    --muted-foreground: 30 5% 45%;
+
+    --accent: 30 5% 95%;
+    --accent-foreground: 280 100% 35%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,26 +47,29 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 280 100% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Beautiful gradients */
+    --gradient-hope: linear-gradient(135deg, hsl(var(--hope)), hsl(var(--primary)));
+    --gradient-trust: linear-gradient(135deg, hsl(var(--trust)), hsl(var(--primary)));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 95% 53%), hsl(280 100% 35%), hsl(220 90% 56%));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--warm-gray)), hsl(0 0% 100%));
+
+    /* Shadows with brand colors */
+    --shadow-warm: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-hope: 0 8px 30px -4px hsl(var(--hope) / 0.2);
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.15);
+
+    /* Animation easing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
