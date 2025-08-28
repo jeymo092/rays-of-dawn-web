@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook, faHome, faGift } from '@fortawesome/free-solid-svg-icons';
 
 const CallToAction = () => {
   return (
@@ -35,17 +37,23 @@ const CallToAction = () => {
         {/* Impact Preview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="text-center">
-            <div className="text-5xl mb-4">📚</div>
+            <div className="text-5xl mb-4">
+              <FontAwesomeIcon icon={faBook} className="text-white" />
+            </div>
             <h3 className="text-xl font-bold mb-2">$50/month</h3>
             <p className="text-white/80">Sponsors a girl's full education</p>
           </div>
           <div className="text-center">
-            <div className="text-5xl mb-4">🏠</div>
+            <div className="text-5xl mb-4">
+              <FontAwesomeIcon icon={faHome} className="text-white" />
+            </div>
             <h3 className="text-xl font-bold mb-2">$100/month</h3>
             <p className="text-white/80">Provides safe housing & care</p>
           </div>
           <div className="text-center">
-            <div className="text-5xl mb-4">💝</div>
+            <div className="text-5xl mb-4">
+              <FontAwesomeIcon icon={faGift} className="text-white" />
+            </div>
             <h3 className="text-xl font-bold mb-2">$25/month</h3>
             <p className="text-white/80">Supplies hygiene products</p>
           </div>

@@ -1,39 +1,48 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faGraduationCap, 
+  faHome, 
+  faGift, 
+  faHandshake, 
+  faBriefcase, 
+  faHeart 
+} from '@fortawesome/free-solid-svg-icons';
 
 const Programs = () => {
   const programs = [
     {
-      icon: "🎓",
+      icon: faGraduationCap,
       title: "Education Sponsorship",
       description: "We provide full scholarships for primary, secondary, and college education to ensure girls can achieve their academic dreams and break the cycle of poverty.",
       gradient: "bg-gradient-hope"
     },
     {
-      icon: "🏠",
+      icon: faHome,
       title: "Safe House Rescue Center", 
       description: "Our rescue center provides immediate safety, counseling, and support for girls facing vulnerability, abuse, or crisis situations.",
       gradient: "bg-gradient-trust"
     },
     {
-      icon: "💝",
+      icon: faGift,
       title: "Feminine Health & Hygiene",
       description: "We provide sanitary towels, hygiene products, and health education to help girls maintain dignity and stay in school during menstruation.",
       gradient: "bg-gradient-sunset"
     },
     {
-      icon: "🤝",
+      icon: faHandshake,
       title: "Mentorship Programs",
       description: "Connecting girls with role models and mentors who provide guidance, life skills training, and emotional support for personal growth.",
       gradient: "bg-gradient-warm"
     },
     {
-      icon: "💼",
+      icon: faBriefcase,
       title: "Skills Development",
       description: "Vocational training and entrepreneurship programs that equip girls with practical skills for economic independence and self-reliance.",
       gradient: "bg-gradient-hope"
     },
     {
-      icon: "❤️",
+      icon: faHeart,
       title: "Psycho-social Support",
       description: "Professional counseling and therapy services to help girls heal from trauma and build resilience for a brighter future.",
       gradient: "bg-gradient-trust"
@@ -60,7 +69,7 @@ const Programs = () => {
             >
               <CardHeader className="pb-4">
                 <div className={`w-16 h-16 rounded-full ${program.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-2xl">{program.icon}</span>
+                  <FontAwesomeIcon icon={program.icon} className="text-2xl text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
                   {program.title}
