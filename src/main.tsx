@@ -17,6 +17,12 @@ import {
   faEnvelope,
   faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons'
+import { 
+  faFacebook, 
+  faTwitter, 
+  faInstagram, 
+  faLinkedin 
+} from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faGraduationCap, 
@@ -29,7 +35,11 @@ library.add(
   faBars,
   faPhone,
   faEnvelope,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin
 )
 
 console.log('Main script loading');

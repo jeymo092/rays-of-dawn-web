@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -19,13 +20,16 @@ const Footer = () => {
               Building a brighter future, one girl at a time.
             </p>
             <div className="space-y-2">
-              <p className="text-sm">
+              <p className="text-sm flex items-center gap-2">
+                <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 text-hope" />
                 <span className="font-medium">Email:</span> info@mialeyapambazuko.org
               </p>
-              <p className="text-sm">
+              <p className="text-sm flex items-center gap-2">
+                <FontAwesomeIcon icon={faPhone} className="w-4 h-4 text-hope" />
                 <span className="font-medium">Phone:</span> +254 XXX XXX XXX
               </p>
-              <p className="text-sm">
+              <p className="text-sm flex items-center gap-2">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="w-4 h-4 text-hope" />
                 <span className="font-medium">Address:</span> Nairobi, Kenya
               </p>
             </div>
@@ -101,19 +105,19 @@ const Footer = () => {
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Facebook</span>
-              <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
+              <FontAwesomeIcon icon={faFacebook} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Twitter</span>
-              <FontAwesomeIcon icon={faPhone} className="w-5 h-5" />
+              <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Instagram</span>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="w-5 h-5" />
+              <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">LinkedIn</span>
-              <FontAwesomeIcon icon={faHeart} className="w-5 h-5" />
+              <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
             </a>
           </div>
         </div>
