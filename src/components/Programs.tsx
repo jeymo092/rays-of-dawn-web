@@ -4,7 +4,7 @@ import {
   faGraduationCap, 
   faHome, 
   faGift, 
-  faHandshake, 
+  faUsers, 
   faBriefcase, 
   faHeart 
 } from '@fortawesome/free-solid-svg-icons';
@@ -30,7 +30,7 @@ const Programs = () => {
       gradient: "bg-gradient-sunset"
     },
     {
-      icon: faHandshake,
+      icon: faUsers,
       title: "Mentorship Programs",
       description: "Connecting girls with role models and mentors who provide guidance, life skills training, and emotional support for personal growth.",
       gradient: "bg-gradient-warm"
