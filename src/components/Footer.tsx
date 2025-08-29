@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone, faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -94,23 +97,23 @@ const Footer = () => {
             © 2024 Miale Ya Pambazuko. All rights reserved.
           </p>
           
-          {/* Social Media Icons Placeholder */}
+          {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Facebook</span>
-              📘
+              <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Twitter</span>
-              🐦
+              <FontAwesomeIcon icon={faPhone} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">Instagram</span>
-              📸
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="w-5 h-5" />
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-hope transition-colors">
               <span className="sr-only">LinkedIn</span>
-              💼
+              <FontAwesomeIcon icon={faHeart} className="w-5 h-5" />
             </a>
           </div>
         </div>

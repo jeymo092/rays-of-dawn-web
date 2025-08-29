@@ -32,4 +32,7 @@ library.add(
   faMapMarkerAlt
 )
 
+console.log('Main script loading');
+console.log('Creating root element');
+
 createRoot(document.getElementById("root")!).render(<App />);

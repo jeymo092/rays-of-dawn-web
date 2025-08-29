@@ -5,6 +5,7 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  console.log('Index component rendering');
   return (
     <main className="min-h-screen">
       <Header />
