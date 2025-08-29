@@ -13,6 +13,7 @@ import {
   faBook, 
   faGift,
   faBars,
+  faTimes,
   faPhone,
   faEnvelope,
   faMapMarkerAlt
@@ -33,6 +34,7 @@ library.add(
   faBook, 
   faGift,
   faBars,
+  faTimes,
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
